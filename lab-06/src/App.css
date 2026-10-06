@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: lightgray;
+}
+
+.app {
+  text-align: center;
+  padding: 30px;
+}
+
+h1 {
+  color: darkblue;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.user-section,
+.counter-section {
+  background: white;
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h2 {
+  color: darkblue;
+}
+
+.user-section h3 {
+  color: blue;
+}
+
+.count {
+  font-size: 50px;
+  font-weight: bold;
+  color: blue;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.login-btn {
+  background: teal;
+}
+
+.logout-btn {
+  background: padding-box;
+}
+
+.counter-btn {
+  background: plum;
+  width: 50px;
+  height: 40px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
