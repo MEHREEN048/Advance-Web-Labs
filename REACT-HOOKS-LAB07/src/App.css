@@ -1,0 +1,130 @@
+/* Main Dashboard */
+.app {
+  min-height: 100vh;
+  padding: 45px 20px;
+  text-align: center;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  transition: all 0.35s ease;
+}
+
+/* Light Theme */
+.app.light {
+  background: linear-gradient(135deg, #f5efff, #e8e0fa, #f9f6ff);
+  color: #302044;
+}
+
+/* Dark Theme */
+.app.dark {
+  background: linear-gradient(135deg, #171126, #281b3d, #35234c);
+  color: #ffffff;
+}
+
+/* Main Heading */
+.app h1 {
+  font-size: 36px;
+  font-weight: 750;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+  background: linear-gradient(90deg, #8751cf, #c084fc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Cards */
+.card {
+  max-width: 600px;
+  margin: 25px auto;
+  padding: 28px 25px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.85);
+  color: #302044;
+  box-shadow: 0 8px 25px rgba(75, 42, 110, 0.12);
+  border: 1px solid rgba(155, 110, 205, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Dark Mode Cards */
+.dark .card {
+  background: rgba(66, 48, 88, 0.9);
+  color: #ffffff;
+  border: 1px solid rgba(200, 160, 255, 0.18);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Hover Effect */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 30px rgba(95, 55, 145, 0.2);
+}
+
+/* Card Headings */
+.card h2 {
+  font-size: 21px;
+  margin-bottom: 20px;
+  color: #7542aa;
+}
+
+.dark .card h2 {
+  color: #d4b5ff;
+}
+
+/* Counter Number */
+.card h3 {
+  font-size: 28px;
+  margin: 15px 0;
+}
+
+/* Buttons */
+button {
+  background: linear-gradient(135deg, #8750c9, #6236a0);
+  color: white;
+  border: none;
+  padding: 11px 22px;
+  margin: 7px;
+  border-radius: 9px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  box-shadow: 0 4px 12px rgba(100, 55, 160, 0.2);
+  transition: all 0.25s ease;
+}
+
+/* Button Hover */
+button:hover {
+  background: linear-gradient(135deg, #a36be5, #7041b0);
+  transform: translateY(-2px);
+  box-shadow: 0 7px 16px rgba(100, 55, 160, 0.3);
+}
+
+/* Button Click */
+button:active {
+  transform: scale(0.96);
+}
+
+/* Paragraphs */
+.card p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .app {
+    padding: 25px 12px;
+  }
+
+  .app h1 {
+    font-size: 28px;
+  }
+
+  .card {
+    padding: 22px 15px;
+    margin: 18px auto;
+  }
+
+  button {
+    padding: 10px 15px;
+  }
+}
