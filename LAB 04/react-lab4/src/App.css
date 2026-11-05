@@ -1,0 +1,128 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4efff;
+    color: #302044;
+}
+
+.app {
+    min-height: 100vh;
+    padding: 45px 20px;
+    text-align: center;
+}
+
+header {
+    background: linear-gradient(135deg, #54258b, #9670d5);
+    color: white;
+    padding: 35px 15px;
+    border-radius: 18px;
+    max-width: 850px;
+    margin: auto auto 30px;
+}
+
+header h1 {
+    margin: 0 0 10px;
+    font-size: 32px;
+}
+
+header p {
+    margin: 0;
+    color: #eee3ff;
+}
+
+.welcome-card,
+.card {
+    background: white;
+    padding: 28px;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px #39205b15;
+}
+
+.welcome-card {
+    max-width: 850px;
+    margin: auto;
+    border-left: 5px solid #8854c7;
+}
+
+.welcome-label {
+    color: #8854c7;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.welcome-card h2 {
+    color: #54258b;
+    margin-bottom: 8px;
+}
+
+.sections {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    max-width: 850px;
+    margin: 25px auto;
+}
+
+.card {
+    flex: 1;
+    min-width: 260px;
+}
+
+.card h3 {
+    color: #54258b;
+}
+
+.count {
+    font-size: 48px;
+    font-weight: bold;
+    color: #8854c7;
+    margin: 15px;
+}
+
+button {
+    background: #7543ad;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    margin: 6px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #4e247e;
+    transform: translateY(-2px);
+}
+
+.toggle-message {
+    color: #7543ad;
+    font-weight: bold;
+    padding: 12px;
+    background: #f4efff;
+    border-radius: 8px;
+}
+
+footer {
+    color: #806c98;
+    margin-top: 35px;
+    font-size: 13px;
+}
+
+@media (max-width: 600px) {
+    .app {
+        padding: 25px 12px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+}
